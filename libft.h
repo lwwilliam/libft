@@ -15,6 +15,9 @@ char *strlcpy ( char *dest, const char *src, size_t y);
 char *strlcat ( char *dest, const char *src, size_t nb);
 char *ft_strchr ( const char *str, int y);
 char *ft_strrchr ( const char *str, int y);
+int ft_strncmp(const char *s1, const char *s2, size_t n);
+char *ft_strnstr(const char	*s1, const char *s2, size_t len);
+int ft_atoi(const char *str);
 
 
 
