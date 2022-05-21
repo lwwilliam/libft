@@ -1,4 +1,4 @@
-char *ft_strchr ( const char *str, int y)
+char *ft_strchr(const char *str, int y)
 {
     int x;
 
