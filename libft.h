@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:15:36 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 20:48:43 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/24 00:08:36 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,10 @@ char	*ft_strnstr(const char	*s1, const char *s2, size_t len);
 char	*ft_strrchr(const char *str, int y);
 int		ft_tolower(int x);
 int		ft_toupper(int x);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	*calloc(size_t nitems, size_t size);
 
 #endif 
