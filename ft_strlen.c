@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/23 11:15:15 by lwilliam          #+#    #+#             */
+/*   Updated: 2022/05/23 18:06:41 by lwilliam         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "stdlib.h"
 
-size_t strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    int x;
+	int	x;
 
-    x = 0;
-    while (str[x] != '\0')
-        x++;
-    return(str);
+	x = 0;
+	while (str[x] != '\0')
+		x++;
+	return (str);
 }

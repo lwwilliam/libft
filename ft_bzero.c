@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 11:13:43 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 17:30:01 by lwilliam         ###   ########.fr       */
+/*   Created: 2022/05/23 18:14:36 by lwilliam          #+#    #+#             */
+/*   Updated: 2022/05/23 19:27:58 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
-	int	x;
-	int	neg;
-	int	num;
+	size_t			x;
+	unsigned char	*str;
 
 	x = 0;
-	neg = 1;
-	num = 0;
-	while (str[x] < 33)
-		x++;
-	if (str[x] == '-')
+	str = (unsigned char *)s;
+	while (x < n)
 	{
-		neg = -1;
-	}
-	x++;
-	while (str[x] >= '0' && str[x] <= '9')
-	{
-		num = num * 10 + str[x] - '0';
+		str[x] = '0';
 		x++;
 	}
-	return (num * neg);
 }

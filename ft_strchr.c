@@ -1,15 +1,27 @@
-char *ft_strchr(const char *str, int y)
-{
-    int x;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/23 11:15:00 by lwilliam          #+#    #+#             */
+/*   Updated: 2022/05/23 17:58:15 by lwilliam         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    x = 0;
-    while (str[x] != '\0')
-    {
-        if (str[x] == y)
-        {
-            return((char *)str + x);
-        }
-        x++;
-    }
-    return(0);
+char	*ft_strchr(const char *str, int y)
+{
+	int	x;
+
+	x = 0;
+	while (str[x] != '\0')
+	{
+		if (str[x] == y)
+		{
+			return ((char *)str + x);
+		}
+		x++;
+	}
+	return (0);
 }
