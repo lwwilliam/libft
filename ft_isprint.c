@@ -6,13 +6,13 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:14:13 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 17:48:42 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/24 20:36:25 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int x)
 {
-	if (x >= 23 && x <= 127)
+	if (x >= 32 && x <= 126)
 		return (1);
 	return (0);
 }
