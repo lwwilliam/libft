@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:15:04 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 18:03:52 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/24 19:01:47 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strlcat(char *dest, const char *src, size_t nb)
 
 	x = 0;
 	y = 0;
+	if (nb  <= ft_strlen(dest))
+		return((char *)src);
 	while (dest[x] != '\0')
 	{
 		x++;
@@ -30,5 +32,5 @@ char	*ft_strlcat(char *dest, const char *src, size_t nb)
 		x++;
 	}
 	dest[x] = '\0';
-	return (dest);
+	return (dest + y);
 }

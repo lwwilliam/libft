@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:14:37 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 17:50:02 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/24 18:47:51 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,5 @@ void	*ft_memchr(const void *str, int c, size_t n)
 		d++;
 		x++;
 	}
+	return (0);
 }

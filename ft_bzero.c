@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 18:14:36 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 19:27:58 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/24 20:43:27 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_bzero(void *s, size_t n)
 	str = (unsigned char *)s;
 	while (x < n)
 	{
-		str[x] = '0';
+		str[x] = 0;
 		x++;
 	}
 }

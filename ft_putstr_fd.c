@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 23:23:06 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 23:29:36 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/24 18:57:23 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &s[x], 1);
 		x++;
 	}
-	return(NULL);
 }
