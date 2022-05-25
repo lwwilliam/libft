@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *str, int y)
 	{
 		lw++;
 	}
-	while (*str)
+	while (lx >= 0)
 	{
 		if (str[lw] == y)
 		{
