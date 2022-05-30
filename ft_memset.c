@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:14:56 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 19:18:17 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/26 14:54:53 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memset(void *str, int c, size_t n)
 		p[x] = (unsigned char)c;
 		x++;
 	}
-	return (str);
+	return (p);
 }

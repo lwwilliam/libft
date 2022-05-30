@@ -5,21 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/25 22:37:59 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/25 22:43:23 by lwilliam         ###   ########.fr       */
+/*   Created: 2022/05/26 10:18:34 by lwilliam          #+#    #+#             */
+/*   Updated: 2022/05/30 14:32:04 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int x;
-	char *str;
+	size_t	x;
+	char	*str;
 
 	x = 0;
-	if ((str = (char *)malloc(len + 1)) == NULL)
-		return(NULL);
+	if (!s)
+		return (0);
+	str = (char *)malloc (len + 1);
+	if (!str)
+		return (NULL);
+	if (ft_strlen(s) < start)
+		return (ft_strdup(""));
 	while (x < len)
 	{
 		str[x] = s[start];

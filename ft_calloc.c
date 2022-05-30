@@ -6,15 +6,15 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 23:59:01 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/24 18:46:26 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/26 13:54:08 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t nitems, size_t size)
+void	*ft_calloc(size_t nitems, size_t size)
 {
-	void *x;
+	void	*x;
 
 	x = malloc(size * nitems);
 	if (!x)

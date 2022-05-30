@@ -6,9 +6,11 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:15:26 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/23 18:10:21 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/05/27 14:52:05 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int y)
 {
@@ -19,9 +21,9 @@ char	*ft_strrchr(const char *str, int y)
 	{
 		lw++;
 	}
-	while (lx >= 0)
+	while (lw >= 0)
 	{
-		if (str[lw] == y)
+		if (str[lw] == (char)y)
 		{
 			return ((char *)str + lw);
 		}
