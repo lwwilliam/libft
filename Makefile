@@ -2,7 +2,7 @@ NAME		= libft.a
 
 SRCS		= *.c
 
-OBJS		= $(SRCS:%.c=%.o)
+OBJS		= $(SRCS:.c=.o)
 
 FLAGS		= -Wall -Werror -Wextra
 
