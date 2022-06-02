@@ -19,3 +19,9 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+yes:
+	gcc $(FLAGS) ft_strtrim.c ft_strlen.c ft_strchr.c ft_strrchr.c
+	./a.out
+
+.PHONY: all clean fclean re yes

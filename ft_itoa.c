@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 17:14:10 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/06/02 10:39:35 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/06/02 14:39:38 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ int	count(int c)
 	int	x;
 
 	x = 0;
+	if (c == -2147483648)
+		return (11);
 	if (c == 0)
 		return (1);
-	else if (c < 0)
+	if (c < 0)
 	{
 		c = c * -1;
 		x++;
@@ -43,7 +45,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	num[len--] = '\0';
 	if (n == -2147483648)
-	    return ((char *)"-2147483648");
+		num = "-2147483648";
 	if (n < 0)
 	{
 		num[0] = '-';
