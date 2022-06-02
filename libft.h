@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:15:36 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/05/30 11:40:22 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/06/01 14:16:44 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	*ft_calloc(size_t nitems, size_t size);
+char	*ft_itoa(int n);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif 

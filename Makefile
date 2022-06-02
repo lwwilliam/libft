@@ -14,11 +14,8 @@ all: $(NAME)
 
 clean:
 	rm -f $(OBJS)
+
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-#yes: 
-#	gcc ft_itoa.c libft.h
-#	./a.out
