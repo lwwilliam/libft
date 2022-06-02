@@ -6,7 +6,7 @@
 /*   By: lwilliam <lwilliam@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 11:05:21 by lwilliam          #+#    #+#             */
-/*   Updated: 2022/06/02 19:07:06 by lwilliam         ###   ########.fr       */
+/*   Updated: 2022/06/02 23:48:45 by lwilliam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		flen;
 	int		elen;
 	int		reslen;
+	int		x;
 
 	flen = 0;
+	x = 0;
 	elen = ft_strlen(s1);
 	if (!(s1) && !(set))
 		return (NULL);
@@ -31,4 +33,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res = malloc(sizeof(char) * (reslen + 1));
 	if (!(res))
 		return (NULL);
-	
+	while(flen < elen)
+	{
+		res[x] = s1[flen];
+		flen++;
+		x++;
+	}
+	res[flen] = '\0';
+	return (res);
+}
+
+// #include<stdio.h>
+
+// int main()
+// {
+// 	printf("%s\n", ft_strtrim("abadddavdcdddabc", "abc"));
+// }
